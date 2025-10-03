@@ -4,7 +4,7 @@ from transformers import pipeline
 # Load Hugging Face model (smaller = faster + deployable)
 @st.cache_resource
 def load_model():
-    return pipeline("text-generation", model="distilgpt2")  # 👈 use a smaller model
+    return pipeline("text-generation", model="Salesforce/codegen-350M-mono")  # 👈 use a smaller model
 
 generator = load_model()
 
